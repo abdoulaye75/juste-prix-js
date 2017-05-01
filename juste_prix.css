@@ -1,0 +1,14 @@
+.jumbotron {
+	margin-top: 50px;
+	background-color: #006400 !important;
+}
+
+h1, h2, button, .solution {
+	color: #fff !important;
+	font-family: 'Noto Sans', sans-serif;
+}
+
+.bet {
+	transition: 0.25s;
+	visibility: hidden;
+}
