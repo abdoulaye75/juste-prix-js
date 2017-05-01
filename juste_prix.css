@@ -1,6 +1,13 @@
+body {
+	background-image: url("background.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
 .jumbotron {
 	margin-top: 50px;
 	background-color: #006400 !important;
+	opacity: 0.9;
 }
 
 h1, h2, button, .solution {
