@@ -10,13 +10,14 @@
 <body>
 
 	<div class="container">
-		<div class="jumbotron">
+		<div class="jumbotron" id="jumbotron">
 			<h1 class="text-center"> Le prix à trouver : entre 1 et 100 </h1>
-			<h2 class="text-center"> <span id="nbSecondes"> 20 </span> secondes </h2>
+			<h2 class="text-center"> <span id="nbSecondes"> 30 </span> secondes </h2>
 			<h3 id="reponse" class="solution"></h3>
 
 			<form class="form-inline bet" id="bet" role="form">
-				<input type="text" name="number" class="form-control" placeholder="Un nombre entre 1 et 100" id="number" autocomplete="off">
+				<input autofocus type="text" name="number" class="form-control" placeholder="Un nombre entre 1 et 100"
+				 id="number" autocomplete="off">
 				<button type="submit" class="btn btn-primary"> Valider </button>
 			</form>
 

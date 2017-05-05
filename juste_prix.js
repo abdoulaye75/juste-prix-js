@@ -1,4 +1,4 @@
-let nbSecondes = 20;
+let nbSecondes = 30;
 let solution = 0;
 let gameStarted = null;
 let start = document.getElementById("start");
@@ -13,7 +13,7 @@ start.addEventListener("click", function() {
 	let minuteur = setInterval(function() {
 		if (nbSecondes === 0) {
 			clearInterval(minuteur);
-			document.getElementById("reponse").appendChild(document.createTextNode("Perdu !"));
+			document.getElementById("reponse").appendChild(document.createTextNode("Perdu ! La solution était " + solution));
 			formBet.style.visibility = "hidden";
 		} else {
 			nbSecondes--;
@@ -29,12 +29,11 @@ formBet.addEventListener("submit", function(e) {
 		document.getElementById("reponse").appendChild(document.createTextNode("Gagné !"));
 		clearInterval(minuteur);
 	} else if (gameStarted < solution) {
-		document.getElementById("reponse").appendChild(document.createTextNode("C'est plus !"));
+		document.getElementById("reponse").appendChild(document.createTextNode(gameStarted + " ? C'est plus !"));
 	} else {
-		document.getElementById("reponse").appendChild(document.createTextNode("C'est moins !"));
+		document.getElementById("reponse").appendChild(document.createTextNode(gameStarted + " ? C'est moins !"));
 	}
 
-	gameStarted = " ";
 	console.log(solution);
 	e.preventDefault();
 });
