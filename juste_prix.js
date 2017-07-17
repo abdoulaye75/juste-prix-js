@@ -29,9 +29,9 @@ formBet.addEventListener("submit", function(e) {
 		document.getElementById("reponse").appendChild(document.createTextNode("Gagné !"));
 		clearInterval(minuteur);
 	} else if (gameStarted < solution) {
-		document.getElementById("reponse").appendChild(document.createTextNode(gameStarted + " ? C'est plus !"));
+		document.getElementById("reponse").appendChild(document.createTextNode(gameStarted + " ? C'est plus ! "));
 	} else {
-		document.getElementById("reponse").appendChild(document.createTextNode(gameStarted + " ? C'est moins !"));
+		document.getElementById("reponse").appendChild(document.createTextNode(gameStarted + " ? C'est moins ! "));
 	}
 
 	console.log(solution);
